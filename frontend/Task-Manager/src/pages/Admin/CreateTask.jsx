@@ -11,7 +11,7 @@ import SelectDropdown from "../../components/Inputs/SelectDropdown";
 import SelectUsers from "../../components/Inputs/SelectUsers";
 import TodoListInput from "../../components/Inputs/TodoListInput";
 import AddAttachmentsInput from "../../components/Inputs/AddAttachmentsInput";
-// import DeleteAlert from "../../components/DeleteAlert";
+import DeleteAlert from "../../components/DeleteAlert";
 import Modal from "../../components/Modal";
 
 const CreateTask = () => {
@@ -344,10 +344,10 @@ const CreateTask = () => {
         onClose={() => setOpenDeleteAlert(false)}
         title="Delete Task"
       >
-        {/* <DeleteAlert
+        <DeleteAlert
           content="Are you sure you want to delete this task?"
           onDelete={() => deleteTask()}
-        /> */}
+        />
       </Modal>
 
     </DashboardLayout>
