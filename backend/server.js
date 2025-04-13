@@ -12,15 +12,16 @@ const reportRoutes = require("./routes/reportRoutes")
 const app = express();
 
 // Middleware to handle CORS
-app.use(
-  cors({
-   // origin: process.env.CLIENT_URL || "*",
-    origin: "https://task-manager-app-frontend-bnbl.onrender.com",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+// app.use(
+//   cors({
+//    // origin: process.env.CLIENT_URL || "*",
+//     origin: "https://task-manager-app-frontend-bnbl.onrender.com",
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//   })
+// );
 
+app.use(cors());
 // Connect Database
 connectDB();
 
