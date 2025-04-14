@@ -122,9 +122,10 @@ const SignUp = () => {
             <Input
               value={adminInviteToken}
               onChange={({ target }) => setAdminInviteToken(target.value)}
-              label="Admin Invite Token"
-              placeholder="6 Digit Code"
+              label="Admin Invite Token (4588944 - For Admin Only)"
+              placeholder="Use above token for Admin, else leave it blank"
               type="text"
+              title="If you want to signup as admin, please enter the invite token. Otherwise, leave it blank to signup as a member."
             />
           </div>
 
