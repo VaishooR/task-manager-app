@@ -9,8 +9,8 @@ import { UserContext } from "../../context/userContext";
 
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState("vaishoo@coding.com");
+  const [password, setPassword] = useState("test@123");
   const [error, setError] = useState("");
 
   const {updateUser} = useContext(UserContext)
